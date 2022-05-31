@@ -1,6 +1,6 @@
 .login{
     height: 100vh; /*100vh*/
-    background-image: linear-gradient(to right, #ff453f, #74efff);
+    background-image: linear-gradient(to right, #0f453f, #74efff);
 
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
     
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     .loginForm{
         width: 100%;
     }
