@@ -9,8 +9,18 @@ const Home = () => {
       <div className="homeright">
         <User
           userId={"user._id"}
-          name={"user.name"}
-          dp={"user.dp.url"}
+          name={"Abhishek"}
+          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
+        />
+        <User
+          userId={"user._id"}
+          name={"Elon Musk"}
+          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
+        />
+        <User
+          userId={"user._id"}
+          name={"Abhishek"}
+          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
         />
       </div>
     </div>
