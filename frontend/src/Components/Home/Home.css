@@ -1,24 +1,25 @@
 .home{
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 80% 400px;
+    /* grid-template-columns: 80% 400px; */
+    grid-template-columns: 20% 80%;
     height: 100vh;
 }
 
 .homeleft{
-    background-image: linear-gradient(to right, #74efff, #0f453f);
+    padding: 2vmax;
+    box-sizing: border-box;
+    overflow-y: auto; /* -y*/
+}
+
+.homeright{
+    background-image: linear-gradient(to left, #74efff, #0f453f);
     overflow-y: auto; /*-y*/
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2vmax;
     box-sizing: border-box;
-}
-
-.homeright{
-    padding: 2vmax;
-    box-sizing: border-box;
-    overflow-y: auto; /* -y*/
 }
 
 .homeUser{
