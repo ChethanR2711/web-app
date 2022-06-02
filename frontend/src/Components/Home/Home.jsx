@@ -24,8 +24,7 @@ const Home = () => {
         />
       </div>
       <div className="homeright">
-        <Post/>
-
+        <Post postImage="https://cdn.unenvironment.org/2022-03/field-ge4d2466da_1920.jpg" ownName="Abhi"/>
       </div>
     </div>
   )
