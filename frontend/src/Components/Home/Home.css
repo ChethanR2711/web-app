@@ -13,7 +13,7 @@
 }
 
 .homeright{
-    background-image: linear-gradient(to left, #74efff, #0f453f);
+    background-image: linear-gradient(to right, #FFE8D4, #7EB2DD);
     overflow-y: auto; /*-y*/
     display: flex;
     flex-direction: column;
