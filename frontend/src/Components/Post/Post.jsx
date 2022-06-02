@@ -1,10 +1,29 @@
+import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
 
-const Post = () => {
+const Post = ({
+  postId,
+  caption,
+  postImage,
+  likes = [],
+  comments = [],
+  ownImage,
+  ownName,
+  ownId,
+  isDelete = false,
+  isAccount = false,
+}) => {
   return (
-    <div>
+    <div className="post">
+      <div className="postHeader"></div>
+
+      <img src={postImage} alt="Post" />
       
+      <div className="postDetails">
+        <Avatar src={ownImage} />
+
+      </div>
     </div>
   )
 }
