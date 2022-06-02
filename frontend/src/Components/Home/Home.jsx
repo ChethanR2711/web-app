@@ -10,17 +10,17 @@ const Home = () => {
         <User
           userId={"user._id"}
           name={"Abhishek"}
-          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
+          dp={"https://cdn.unenvironment.org/2022-03/field-ge4d2466da_1920.jpg"}
         />
         <User
           userId={"user._id"}
-          name={"Elon Musk"}
-          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
+          name={"Harsha"}
+          dp={"https://img-b.udemycdn.com/user/200_H/127072178_c9a0_3.jpg"}
         />
         <User
           userId={"user._id"}
-          name={"Abhishek"}
-          dp={"https://th.bing.com/th/id/OIP.ddIZudKNg4dgPdTUYy7UxAHaFQ?w=232&h=180&c=7&r=0&o=5&pid=1.7"}
+          name={"Adithya U bhat"}
+          dp={"https://img-b.udemycdn.com/user/200_H/121329372_617a.jpg"}
         />
       </div>
       <div className="homeright">
