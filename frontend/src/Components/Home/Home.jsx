@@ -30,7 +30,8 @@ const Home = () => {
       </div>
       <div className="homeright">
         <Post postImage="https://cdn.unenvironment.org/2022-03/field-ge4d2466da_1920.jpg" ownName="Abhishek"
-        caption={"This is sample post of nature"}/>
+        caption={"This is sample post of nature"}
+        />
       </div>
     </div>
   )

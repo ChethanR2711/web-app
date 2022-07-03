@@ -1,12 +1,12 @@
 import { Avatar, Button, Typography } from '@mui/material'
 import { Link } from "react-router-dom";
-import { 
+import {
   ThumbUp,
   ThumbUpOutlined,
   MoreVert,
   ChatBubbleOutline,
   DeleteOutline,
- } from "@mui/icons-material";
+} from "@mui/icons-material";
 import React, { useState } from 'react'
 import "./Post.css"
 
@@ -23,19 +23,29 @@ const Post = ({
   isAccount = false,
 }) => {
 
-  const [liked,setLiked] = useState(false)
+  const [liked, setLiked] = useState(false)
+
+  const handleLike = () => {
+    setLiked(!liked);
+  }
 
   return (
     <div className="post">
-      <div className="postHeader"></div>
+      <div className="postHeader">
+        
+        {isAccount ? <Button>
+          <MoreVert/>
+        </Button> : null}
+
+      </div>
 
       <img src={postImage} alt="Post" />
 
       <div className="postDetails">
         <Avatar src={ownImage} alt="User" sx={{
-          height : "3vmax",
-          width : "3vmax",
-        }}/>
+          height: "3vmax",
+          width: "3vmax",
+        }} />
 
         <Link to={`/user/${ownId}`}>
           <Typography fontWeight={700}>{ownName}</Typography>
@@ -43,30 +53,29 @@ const Post = ({
 
         <Typography
           fontWeight={100}
-          color = "rgba(0,0,0,0.5)"
-          style={{alignSelf : "center"}}
+          color="rgba(0,0,0,0.5)"
+          style={{ alignSelf: "center" }}
         >
           {caption}
         </Typography>
 
       </div>
 
-      <button 
+      <button
         style={{
-          border :"none",
-          backgroundColor : "white",
-          cursor : "pointer",
-          margin : "1vmax 2vmax",
+          border: "none",
+          backgroundColor: "white",
+          cursor: "pointer",
+          margin: "1vmax 2vmax",
         }}
       >
-        {/* <Typography>5 likes</Typography> */}
       </button>
 
       <div className="postFooter">
-        
-        <Button>
+
+        <Button onClick={handleLike}>
           {
-            liked? <ThumbUp/> : <ThumbUpOutlined />
+            liked ? <ThumbUp style={{color: "blue" }} /> : <ThumbUpOutlined />
           }
         </Button>
 
@@ -74,9 +83,9 @@ const Post = ({
           <ChatBubbleOutline />
         </Button>
 
-        <Button>
-          <DeleteOutline />
-        </Button>
+        {isDelete ? (<Button>
+            <DeleteOutline />
+          </Button>) : null}
 
       </div>
     </div>
